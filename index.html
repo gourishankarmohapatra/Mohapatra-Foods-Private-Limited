@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohapatra Foods PVT LTD | Premium Processed Foods</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">Mohapatra Foods</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#brands">Our Brands</a></li>
+            <li><a href="#coming-soon">Coming Soon</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-up">Taste the Tradition, Experience Quality</h1>
+            <p class="animate-up delay-1">From crunchy morning cereals to premium roasted coffee, we bring joy to every home.</p>
+            <a href="#brands" class="btn animate-up delay-2">Explore Our Products</a>
+        </div>
+    </header>
+
+    <section id="brands" class="products-section">
+        <h2 class="section-title reveal">Our Premium Categories</h2>
+        <div class="product-grid">
+            
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Morning Cereals</h3>
+                    <p>Muesli, Cornflakes & Oats</p>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Pantry Essentials</h3>
+                    <p>Powders, Fresh Juices & Pastes</p>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1540331547168-8b63109225b7?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Fancy Chocolates</h3>
+                    <p>Rich, indulgent cocoa delights</p>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1621245640232-a5e1bb34526b?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Savory Snacks</h3>
+                    <p>Aloo Bhujia & Delicious Mixtures</p>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Cakes & Cookies</h3>
+                    <p>Freshly baked perfection</p>
+                </div>
+            </div>
+
+            <div class="product-card reveal">
+                <div class="card-bg" style="background-image: url('https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=1600&q=80');"></div>
+                <div class="card-content">
+                    <h3>Premium Coffee</h3>
+                    <p>Powder & Roasted Beans</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="coming-soon" class="coming-soon-section">
+        <div class="coming-soon-content">
+            <div class="badge floating">Coming Soon</div>
+            <h2>Refreshing Fruit Beer</h2>
+            <p>The ultimate non-alcoholic refreshment is on its way.</p>
+        </div>
+    </section>
+
+<section id="contact" class="contact-section reveal">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Have questions about our distribution or products? We're here to help.</p>
+                <div class="info-item">
+                    <strong>Address:</strong> 123 Food Park Avenue, Processed Foods District, India
+                </div>
+                <div class="info-item">
+                    <strong>Email:</strong> info@mohapatrafoods.com
+                </div>
+                <div class="map-container">
+                    <div class="map-pulse"></div>
+                    <span>Locate Our Factory</span>
+                </div>
+            </div>
+
+            <div class="contact-form">
+    <form action="https://formspree.io/f/YOUR_UNIQUE_ID_HERE" method="POST">
+        <div class="input-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+            <select name="inquiry_type">
+                <option value="General">Inquiry Type</option>
+                <option value="Dealership">Dealership</option>
+                <option value="Bulk Order">Bulk Order</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mohapatra Foods PVT LTD. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOptions = { threshold: 0.15, rootMargin: "0px 0px -50px 0px" };
+
+        const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); 
+                }
+            });
+        }, revealOptions);
+
+        reveals.forEach(reveal => { revealOnScroll.observe(reveal); });
+
+        // Navbar Scroll Effect
+        window.onscroll = function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 100) { nav.classList.add('scrolled'); } 
+            else { nav.classList.remove('scrolled'); }
+        };
+    </script>
+</body>
+</html>
